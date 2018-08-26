@@ -3,7 +3,7 @@ import React from "react";
 import { connect } from 'react-redux';
 import { Container, Content, Card, CardItem, Text, Spinner, Icon } from 'native-base';
 import { StyleSheet, View, Modal, TouchableOpacity, Image } from 'react-native';
-import { CachedImage } from 'react-native-cached-image'
+
 /* Component Imports */
 import ErrorComponent from "../components/error";
 import NoNetwork from '../components/noNetwork';
