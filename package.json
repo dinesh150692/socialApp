@@ -1,0 +1,32 @@
+{
+  "name": "social-app",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "jest": "^23.5.0",
+    "jest-react-native": "^18.0.0",
+    "react-test-renderer": "16.3.1"
+  },
+  "scripts": {
+    "start": "react-native start",
+    "android": "ENVFILE=.env.stage react-native run-android",
+    "debugBuild": "mkdir -p android/app/src/main/assets && rm -rf android/app/build && ENVFILE=.env.stage react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res && cd android && ./gradlew assembleDebug",
+    "test": "jest"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "dependencies": {
+    "react": "16.3.1",
+    "native-base": "2.4.4",
+    "react-native": "~0.55.2",
+    "react-native-cached-image": "^1.4.3",
+    "react-native-config": "^0.11.5",
+    "react-native-fetch-blob": "^0.10.8",
+    "react-navigation": "^1.5.11",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0"
+  }
+}
